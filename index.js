@@ -54,6 +54,14 @@ app.get('/', async (req, res) => {
 
 // * Code for Route 2 goes here
 
+app.get('/update-cobj', (req, res) => {
+
+    res.render('updates', {
+        title: 'Update Custom Object Form'
+    });
+
+});
+
 // TODO: ROUTE 3 - Create a new app.post route for the custom objects form to create or update your custom object data. Once executed, redirect the user to the homepage.
 
 // * Code for Route 3 goes here

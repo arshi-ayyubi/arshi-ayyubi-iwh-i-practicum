@@ -1,0 +1,35 @@
+html
+  head
+    title Add Book
+
+  body
+    h1 Add Book
+
+    form(action="/update-cobj" method="POST")
+
+      div
+        label Name
+        br
+        input(type="text" name="name" required)
+
+      br
+
+      div
+        label Author
+        br
+        input(type="text" name="author" required)
+
+      br
+
+      div
+        label Price
+        br
+        input(type="number" name="price" required)
+
+      br
+
+      button(type="submit") Save Book
+
+    br
+
+    a(href="/") Return to Homepage
